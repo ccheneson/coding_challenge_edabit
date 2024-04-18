@@ -1,5 +1,7 @@
+//https://edabit.com/challenge/kKQPf5xTAdnBjqvZ8
+
 fn split(input: &str) -> Vec<&str> {
-    let mut result: Vec<&str> = vec![];
+    let mut result: Vec<&str> = Vec::with_capacity(input.len());
     let mut index_from: Option<usize> = None;
     let mut counter: i16 = 0;
 
